@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kia Sportage
+* source:	https://sketchfab.com/3d-models/kia-sportage-98a84407998a4bc6b4dee912b289f15b
+* author:	karaman.arman (https://sketchfab.com/karaman.arman)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kia Sportage" (https://sketchfab.com/3d-models/kia-sportage-98a84407998a4bc6b4dee912b289f15b) by karaman.arman (https://sketchfab.com/karaman.arman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

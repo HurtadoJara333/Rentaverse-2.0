@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mazda CX-5 2020
+* source:	https://sketchfab.com/3d-models/mazda-cx-5-2020-ea176c6ebe814be3b06641bf038f8642
+* author:	ItsDiyor (https://sketchfab.com/ItsDiyor)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mazda CX-5 2020" (https://sketchfab.com/3d-models/mazda-cx-5-2020-ea176c6ebe814be3b06641bf038f8642) by ItsDiyor (https://sketchfab.com/ItsDiyor) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

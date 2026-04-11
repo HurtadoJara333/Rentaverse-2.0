@@ -1,0 +1,11 @@
+Model Information:
+* title:	2020 Mazda 3 Hatchback
+* source:	https://sketchfab.com/3d-models/2020-mazda-3-hatchback-0a12dda232354cf6bcf5854451842502
+* author:	OUTPISTON (https://sketchfab.com/outpiston)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2020 Mazda 3 Hatchback" (https://sketchfab.com/3d-models/2020-mazda-3-hatchback-0a12dda232354cf6bcf5854451842502) by OUTPISTON (https://sketchfab.com/outpiston) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
