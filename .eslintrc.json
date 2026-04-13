@@ -1,7 +1,15 @@
 {
   "extends": ["next/core-web-vitals"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "warn",
-    "react/no-unknown-property": ["error", { "ignore": ["args", "attach", "intensity", "position", "rotation", "castShadow", "receiveShadow", "shadow-mapSize", "shadow-camera-near", "shadow-camera-far", "shadow-camera-left", "shadow-camera-right", "shadow-camera-top", "shadow-camera-bottom", "shadow-bias", "shadow-radius", "object", "dispose", "makeDefault"] }]
+    "react/no-unknown-property": ["error", { "ignore": [
+      "args", "attach", "intensity", "position", "rotation", "castShadow", "receiveShadow", "shadow-mapSize",
+      "shadow-camera-near", "shadow-camera-far", "shadow-camera-left", "shadow-camera-right", "shadow-camera-top",
+      "shadow-camera-bottom", "shadow-bias", "shadow-radius", "object", "dispose", "makeDefault",
+      "transparent", "depthWrite", "map", "side", "toneMapped", "distance", "environmentIntensity",
+      "background", "far", "opacity", "scale", "blur"
+    ] }]
   }
 }
