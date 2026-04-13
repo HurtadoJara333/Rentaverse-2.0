@@ -30,7 +30,7 @@ export default function PanoramaSphere({ url, radius = 100 }: Props) {
   texture.mapping = THREE.EquirectangularReflectionMapping
 
   return (
-    <mesh className="panorama-sphere" scale={[-1, 1, 1]}>
+    <mesh scale={[-1, 1, 1]}>
       {/* High segment count for smooth panorama */}
       <sphereGeometry args={[radius, 128, 64]} />
       <meshBasicMaterial

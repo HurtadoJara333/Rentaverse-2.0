@@ -193,7 +193,6 @@ export default function VehicleViewer() {
               dpr={[1, 2]}
               gl={{
                 antialias: true,
-                stencilBuffer: false,
                 toneMapping: THREE.ACESFilmicToneMapping,
                 toneMappingExposure: 1.1,
                 outputColorSpace: THREE.SRGBColorSpace,

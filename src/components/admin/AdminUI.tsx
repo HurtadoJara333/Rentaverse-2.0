@@ -125,9 +125,9 @@ export function TR({ children, style }: { children: ReactNode; style?: React.CSS
   );
 }
 
-export function TD({ children, muted, style }: { children: ReactNode; muted?: boolean; style?: React.CSSProperties }) {
+export function TD({ children, muted, style, colSpan }: { children: ReactNode; muted?: boolean; style?: React.CSSProperties; colSpan?: number }) {
   return (
-    <td className={`admin-ui__table-cell ${muted ? 'admin-ui__table-cell--muted' : ''}`} style={{ padding: "0.75rem 1rem", color: muted ? "#6B7280" : "#E8E8F0", verticalAlign: "middle", ...style }}>
+    <td className={`admin-ui__table-cell ${muted ? 'admin-ui__table-cell--muted' : ''}`} colSpan={colSpan} style={{ padding: "0.75rem 1rem", color: muted ? "#6B7280" : "#E8E8F0", verticalAlign: "middle", ...style }}>
       {children}
     </td>
   );

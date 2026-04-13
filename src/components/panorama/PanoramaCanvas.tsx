@@ -11,7 +11,6 @@ import {
 } from "@react-three/postprocessing"
 import { ToneMappingMode, BlendFunction } from "postprocessing"
 import * as THREE from "three"
-import type { OrbitControls as OrbitControlsImpl } from "three-stdlib"
 
 import PanoramaSphere from "./PanoramaSphere"
 import VehicleOnFloor from "./VehicleOnFloor"
@@ -53,7 +52,6 @@ function FloorClickPlane({
   if (!isActive) return null
   return (
     <mesh
-      className="panorama-canvas__floor-plane"
       rotation={[-Math.PI / 2, 0, 0]}
       position={[0, floorY, 0]}
       onClick={(e) => { e.stopPropagation(); onFloorClick(e.point) }}
@@ -94,7 +92,7 @@ interface Props {
 }
 
 export default function PanoramaCanvas({ showroom, editorMode = false }: Props) {
-  const orbitRef          = useRef<OrbitControlsImpl>(null)
+  const orbitRef          = useRef<any>(null)
   const [hoveredVehicle, setHoveredVehicle] = useState<string | null>(null)
   const [floorY, setFloorY] = useState(showroom.floorY)
 
@@ -122,7 +120,6 @@ export default function PanoramaCanvas({ showroom, editorMode = false }: Props) 
         className="panorama-canvas__canvas"
         gl={{
           antialias: true,
-          stencilBuffer: false,
           toneMapping: THREE.ACESFilmicToneMapping,
           toneMappingExposure: 1.0,
           outputColorSpace: THREE.SRGBColorSpace,
@@ -159,6 +156,7 @@ export default function PanoramaCanvas({ showroom, editorMode = false }: Props) 
                 vehicle={v}
                 position={position}
                 rotation={p.rotation}
+                scale={p.scale ?? 1}
                 isHovered={hoveredVehicle === v.id}
                 isSelected={false}
                 isEditorMode={editor.isActive}
@@ -174,8 +172,8 @@ export default function PanoramaCanvas({ showroom, editorMode = false }: Props) 
           })}
 
           {/* Optional: slight ambient for vehicles */}
-          <ambientLight className="panorama-canvas__ambient-light" intensity={0.4} color={0x888899} />
-          <directionalLight className="panorama-canvas__directional-light" position={[5, 10, 5]} intensity={0.6} color={0xfff5e0} />
+          <ambientLight intensity={0.4} color={0x888899} />
+          <directionalLight position={[5, 10, 5]} intensity={0.6} color={0xfff5e0} />
 
           <Preload all />
         </Suspense>

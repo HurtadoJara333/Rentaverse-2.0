@@ -10,6 +10,7 @@ interface Props {
   vehicle:   Vehicle
   position:  [number, number, number]
   rotation:  number   // Y-axis rotation in degrees
+  scale:     number   // Additional scale multiplier
   isHovered: boolean
   isSelected:boolean
   isEditorMode: boolean
@@ -22,7 +23,7 @@ interface Props {
 const TARGET_LENGTH = 3.8  // car length in world units (meters)
 
 export default function VehicleOnFloor({
-  vehicle, position, rotation,
+  vehicle, position, rotation, scale,
   isHovered, isSelected,
   isEditorMode, isDragging,
   onHover, onSelect, onDragStart,
@@ -50,14 +51,14 @@ export default function VehicleOnFloor({
     const center = new THREE.Vector3()
     box.getSize(size)
     box.getCenter(center)
-    const scale = TARGET_LENGTH / Math.max(size.x, size.z)
+    const baseScale = TARGET_LENGTH / Math.max(size.x, size.z)
     cloned.position.set(-center.x, -box.min.y, -center.z)
 
     const wrapper = new THREE.Group()
     wrapper.add(cloned)
-    wrapper.scale.setScalar(scale)
+    wrapper.scale.setScalar(baseScale * scale)
     return wrapper
-  }, [scene])
+  }, [scene, scale])
 
   // Subtle hover lift animation
   useFrame((_, delta) => {
