@@ -1,0 +1,50 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --gold: #f59e0b;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --bg: #02020a;
+  --bg2: #0a0a0f;
+  --bg3: #0f0f18;
+  --border: rgba(255, 255, 255, 0.07);
+  --border2: rgba(255, 255, 255, 0.13);
+  --text: #e8e8f0;
+  --muted: #6b7280;
+  --muted2: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-dm-sans);
+  /* overflow is managed per-view:
+     - landing: overflow auto (scrollable)
+     - showroom: overflow hidden via inline style on the fixed container */
+  height: 100%;
+  width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+/* Canvas cursor */
+canvas { cursor: grab; }
+canvas:active { cursor: grabbing; }
+
+/* Font utility */
+.font-display { font-family: var(--font-bebas), sans-serif; }
