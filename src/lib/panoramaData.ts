@@ -11,6 +11,8 @@ export interface CarPlacement {
   rotation: number
   /** Ajuste fino de elevación — 0 = piso */
   elevation: number
+  /** Escala del modelo — 1 = tamaño normal */
+  scale?: number
 }
 
 export interface PanoramaShowroom {
